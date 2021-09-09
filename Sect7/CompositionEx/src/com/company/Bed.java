@@ -15,4 +15,6 @@ public class Bed extends Platform{
             System.out.println("Cat is not on Bed, cannot sleep on Bed");
         }
     }
+
+
 }

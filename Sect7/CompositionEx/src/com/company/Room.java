@@ -18,20 +18,23 @@ public class Room {
 
     public Platform whereIsCat() {
         if (theBed.isCat() == true) {
-            System.out.println("The cat is at" + theBed.getObject());
             return theBed;
         }
         else if (theDoor.isCat() == true) {
-            System.out.println("The cat is at " + theDoor.getObject());
             return theDoor;
         }
         else if (theFloor.isCat() == true) {
-            System.out.println("The cat is at " + theFloor.getObject());
             return theFloor;
         }
         else {
             System.out.println("The cat is not in the room");
             return null;
+        }
+    }
+
+    public void showCat() {
+        if (whereIsCat() != null) {
+            System.out.println("Cat is at " + whereIsCat().getObject());
         }
     }
 

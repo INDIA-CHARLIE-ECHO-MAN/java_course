@@ -9,7 +9,13 @@ public class Main {
     Room theRoom = new Room(theBed, theDoor, theFloor);
 
     theRoom.catSpawn();
-    theRoom.whereIsCat();
     theRoom.catTravel(theDoor);
+    theRoom.showCat();
+    theRoom.catTravel(theBed);
+    theBed.catSleep();
+    theRoom.catTravel(theFloor);
+    theRoom.catTravel(theDoor);
+    theDoor.catExit();
+    theRoom.showCat();
     }
 }
